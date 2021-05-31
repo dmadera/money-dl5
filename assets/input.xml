@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<S5Data>
+  <DodaciListVydanyList>
+    <DodaciListVydany ObjectName="DodaciListVydany" ObjectType="Object" ID="f83afb74-4619-43ec-b893-01e4cf16776b">
+      <CisloDokladu>DV2100001</CisloDokladu>
+      <Odkaz>tel</Odkaz>
+      <PocetPolozek>1</PocetPolozek>
+      <Adresa>
+        <Firma ObjectName="Firma" ObjectType="Object" ID="2d753553-42f0-4d5b-aa4a-71d12679e304">
+          <ICO>28750063</ICO>
+        </Firma>
+      </Adresa>
+      <MojeFirma>
+        <IC>46713301</IC>
+      </MojeFirma>
+      <Suma>
+        <Celkem>275.07</Celkem>
+        <Zaklad>227.33</Zaklad>
+      </Suma>
+      <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="List">
+        <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="Object" ID="fa795fec-7a9c-4da3-9ec2-4fd1b3576af2">
+          <SumaCelkem>275.07</SumaCelkem>
+          <SumaDPH>47.74</SumaDPH>
+          <SumaZaklad>227.33</SumaZaklad>
+          <SazbaDPH ObjectName="SazbaDPH" ObjectType="Object" ID="b7d9bd88-bf7e-4c11-be49-2044879c871c">
+            <Sazba>21.00</Sazba>
+          </SazbaDPH>
+        </DetailniRozpisDPH>
+      </DetailniRozpisDPH>
+      <Polozky ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="List">
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="346822e2-90ba-4b55-a152-dec2afae8446">
+          <CelkovaCena>227.33</CelkovaCena>
+          <JednCena>22.7332</JednCena>
+          <DPH>
+            <Celkem>275.07</Celkem>
+            <Dan>47.74</Dan>
+            <Sazba>21.00</Sazba>
+            <Zaklad>227.33</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="88276768-7641-4bdd-81a3-21cbf1630ffb">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="d200f2fd-f240-4022-b5db-c72d377c59b9">
+              <Kod>3039</Kod>
+              <Nazev>Žiletky Mattes 5ks 44 dámské</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+      </Polozky>
+    </DodaciListVydany>
+    <DodaciListVydany ObjectName="DodaciListVydany" ObjectType="Object" ID="efe46e96-18e0-4282-b210-8d3eb291b9c6">
+      <CisloDokladu>DV2100002</CisloDokladu>
+      <Odkaz>tel</Odkaz>
+      <PocetPolozek>1</PocetPolozek>
+      <Adresa>
+        <Firma ObjectName="Firma" ObjectType="Object" ID="5743a12e-87fb-499c-92a8-e7028d94cdb8">
+          <ICO>12058661</ICO>
+        </Firma>
+      </Adresa>
+      <MojeFirma>
+        <IC>46713301</IC>
+      </MojeFirma>
+      <Suma>
+        <Celkem>29.90</Celkem>
+        <Zaklad>24.71</Zaklad>
+      </Suma>
+      <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="List">
+        <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="Object" ID="242aa966-58d7-4836-a301-367f8b3fd727">
+          <SumaCelkem>29.90</SumaCelkem>
+          <SumaDPH>5.19</SumaDPH>
+          <SumaZaklad>24.71</SumaZaklad>
+          <SazbaDPH ObjectName="SazbaDPH" ObjectType="Object" ID="b7d9bd88-bf7e-4c11-be49-2044879c871c">
+            <Sazba>21.00</Sazba>
+          </SazbaDPH>
+        </DetailniRozpisDPH>
+      </DetailniRozpisDPH>
+      <Polozky ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="List">
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="b02f8243-7d7d-4810-bfc9-a00e27a91b75">
+          <CelkovaCena>24.71</CelkovaCena>
+          <JednCena>24.7100</JednCena>
+          <DPH>
+            <Celkem>29.90</Celkem>
+            <Dan>5.19</Dan>
+            <Sazba>21.00</Sazba>
+            <Zaklad>24.71</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="ad3dfa06-7acb-4b66-8e14-9265a0ec28c4">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="d200f2fd-f240-4022-b5db-c72d377c59b9">
+              <Kod>3039</Kod>
+              <Nazev>Žiletky Mattes 5ks 44 dámské</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+      </Polozky>
+    </DodaciListVydany>
+  </DodaciListVydanyList>
+</S5Data>

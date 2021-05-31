@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.autoGuessEncoding": false,
+    "[plaintext]": {
+        "files.encoding": "windows1250"
+    }
+}
