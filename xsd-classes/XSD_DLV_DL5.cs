@@ -247,6 +247,87 @@ namespace DLV_DL5 {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class enum_DruhSazbyDPH {
+        
+        private enum_DruhSazbyDPHEnumValueName enumValueNameField;
+        
+        private bool enumValueNameFieldSpecified;
+        
+        private enum_DruhSazbyDPH_value valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public enum_DruhSazbyDPHEnumValueName EnumValueName {
+            get {
+                return this.enumValueNameField;
+            }
+            set {
+                this.enumValueNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EnumValueNameSpecified {
+            get {
+                return this.enumValueNameFieldSpecified;
+            }
+            set {
+                this.enumValueNameFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public enum_DruhSazbyDPH_value Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "0.0.0.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
+    public enum enum_DruhSazbyDPHEnumValueName {
+        
+        /// <remarks/>
+        Snizena,
+        
+        /// <remarks/>
+        Zakladni,
+        
+        /// <remarks/>
+        Nulova,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "0.0.0.0")]
+    [System.SerializableAttribute()]
+    public enum enum_DruhSazbyDPH_value {
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("0")]
+        Item0,
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("1")]
+        Item1,
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("2")]
+        Item2,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "0.0.0.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
     public partial class S5DataDodaciListVydanyAdresa {
         
@@ -566,6 +647,8 @@ namespace DLV_DL5 {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
     public partial class S5DataDodaciListVydanyDetailniRozpisDPHDetailniRozpisDPHSazbaDPH {
         
+        private enum_DruhSazbyDPH druhSazbyField;
+        
         private string sazbaField;
         
         private string objectNameField;
@@ -577,6 +660,17 @@ namespace DLV_DL5 {
         public S5DataDodaciListVydanyDetailniRozpisDPHDetailniRozpisDPHSazbaDPH() {
             this.objectNameField = "SazbaDPH";
             this.objectTypeField = "Object";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public enum_DruhSazbyDPH DruhSazby {
+            get {
+                return this.druhSazbyField;
+            }
+            set {
+                this.druhSazbyField = value;
+            }
         }
         
         /// <remarks/>

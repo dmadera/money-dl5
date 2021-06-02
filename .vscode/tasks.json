@@ -13,7 +13,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/moneys4-dl5.csproj",
+                "${workspaceFolder}/money-dl5.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -25,9 +25,8 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/moneys4-dl5.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "-r", "win-x64",
+                "-p:PublishSingleFile=true"         
             ],
             "problemMatcher": "$msCompile"
         },
@@ -38,7 +37,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/moneys4-dl5.csproj",
+                "${workspaceFolder}/money-dl5.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

@@ -57,6 +57,7 @@
                                 <xs:element name="SazbaDPH" minOccurs="0">
                                   <xs:complexType>
                                     <xs:sequence>
+                                      <xs:element name="DruhSazby" type="enum_DruhSazbyDPH" />
                                       <xs:element name="Sazba" type="emptiable_decimal_2" />
                                     </xs:sequence>
                                     <xs:attribute name="ObjectName" fixed="SazbaDPH" use="required" />
@@ -172,6 +173,28 @@
   <xs:simpleType name="empty">
     <xs:restriction base="xs:string">
       <xs:maxLength value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="enum_DruhSazbyDPH">
+    <xs:simpleContent>
+      <xs:extension base="enum_DruhSazbyDPH_value">
+        <xs:attribute name="EnumValueName">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Snizena" />
+              <xs:enumeration value="Zakladni" />
+              <xs:enumeration value="Nulova" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="enum_DruhSazbyDPH_value">
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="0" />
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="group">
