@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<S5Data>
+  <DodaciListVydanyList>
+    <DodaciListVydany ObjectName="DodaciListVydany" ObjectType="Object" ID="f83afb74-4619-43ec-b893-01e4cf16776b">
+      <CisloDokladu>DV2100001</CisloDokladu>
+      <Odkaz>tel</Odkaz>
+      <PocetPolozek>5</PocetPolozek>
+      <Adresa>
+        <Firma ObjectName="Firma" ObjectType="Object" ID="2d753553-42f0-4d5b-aa4a-71d12679e304">
+          <ICO>28750063</ICO>
+        </Firma>
+      </Adresa>
+      <MojeFirma>
+        <IC>46713301</IC>
+      </MojeFirma>
+      <Suma>
+        <Celkem>1032.62</Celkem>
+        <Zaklad>886.07</Zaklad>
+      </Suma>
+      <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="List">
+        <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="Object" ID="9830a3c1-3665-40c8-98ce-c7edf8c90443">
+          <SumaCelkem>757.55</SumaCelkem>
+          <SumaDPH>98.81</SumaDPH>
+          <SumaZaklad>658.74</SumaZaklad>
+          <SazbaDPH ObjectName="SazbaDPH" ObjectType="Object" ID="ab01bdbb-662b-422c-8835-a9270fb48eab">
+            <DruhSazby EnumValueName="Snizena">0</DruhSazby>
+            <Sazba>15.00</Sazba>
+          </SazbaDPH>
+        </DetailniRozpisDPH>
+        <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="Object" ID="fa795fec-7a9c-4da3-9ec2-4fd1b3576af2">
+          <SumaCelkem>275.07</SumaCelkem>
+          <SumaDPH>47.74</SumaDPH>
+          <SumaZaklad>227.33</SumaZaklad>
+          <SazbaDPH ObjectName="SazbaDPH" ObjectType="Object" ID="b7d9bd88-bf7e-4c11-be49-2044879c871c">
+            <DruhSazby EnumValueName="Zakladni">1</DruhSazby>
+            <Sazba>21.00</Sazba>
+          </SazbaDPH>
+        </DetailniRozpisDPH>
+      </DetailniRozpisDPH>
+      <Polozky ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="List">
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="c0f8c0d4-4852-4211-8f98-4f1eb4dc9420">
+          <CelkovaCena>58.60</CelkovaCena>
+          <JednCena>5.8604</JednCena>
+          <Mnozstvi>10.0000</Mnozstvi>
+          <DPH>
+            <Celkem>67.39</Celkem>
+            <Dan>8.79</Dan>
+            <Sazba>15.00</Sazba>
+            <Zaklad>58.60</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="cb377755-c23a-42e3-b558-d8f8919487c6">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="1e828b0c-5b4f-4464-af0b-6f0f95e39a13">
+              <Kod>0102</Kod>
+              <Nazev>Náplast stříhaná 5ks 1682-5</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="87268fb8-ccef-4bd5-9866-95d69089cdf4">
+          <CelkovaCena>258.36</CelkovaCena>
+          <JednCena>23.4876</JednCena>
+          <Mnozstvi>11.0000</Mnozstvi>
+          <DPH>
+            <Celkem>297.11</Celkem>
+            <Dan>38.75</Dan>
+            <Sazba>15.00</Sazba>
+            <Zaklad>258.36</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="ad0eaebd-b277-4ec3-b0d0-d65c47a3a471">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="30f02d3a-5ec4-4081-a075-4c8a11c8c20c">
+              <Kod>3892</Kod>
+              <Nazev>Náplast textilní 8cm x 1m 1663</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="4d734a69-6a24-4f89-b0ae-08440da68690">
+          <CelkovaCena>140.12</CelkovaCena>
+          <JednCena>14.0116</JednCena>
+          <Mnozstvi>10.0000</Mnozstvi>
+          <DPH>
+            <Celkem>161.14</Celkem>
+            <Dan>21.02</Dan>
+            <Sazba>15.00</Sazba>
+            <Zaklad>140.12</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="2b9faf78-d36b-465f-b767-2f7469a1594d">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="2c35034a-a713-4827-a49d-ee0dd16c91d0">
+              <Kod>2183</Kod>
+              <Nazev>Vata obvazová 50g malá</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="1571368a-841b-4ba2-962d-2f8d44f57c90">
+          <CelkovaCena>201.66</CelkovaCena>
+          <JednCena>10.0832</JednCena>
+          <Mnozstvi>20.0000</Mnozstvi>
+          <DPH>
+            <Celkem>231.91</Celkem>
+            <Dan>30.25</Dan>
+            <Sazba>15.00</Sazba>
+            <Zaklad>201.66</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="0237e691-ecf8-4d71-a26e-a46615cffe6d">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="8307fe34-8c0d-4b97-a90b-dbb3c94d72b2">
+              <Kod>3486</Kod>
+              <Nazev>Voda neperlivá 0.5l</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="346822e2-90ba-4b55-a152-dec2afae8446">
+          <CelkovaCena>227.33</CelkovaCena>
+          <JednCena>22.7332</JednCena>
+          <Mnozstvi>10.0000</Mnozstvi>
+          <DPH>
+            <Celkem>275.07</Celkem>
+            <Dan>47.74</Dan>
+            <Sazba>21.00</Sazba>
+            <Zaklad>227.33</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="88276768-7641-4bdd-81a3-21cbf1630ffb">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="d200f2fd-f240-4022-b5db-c72d377c59b9">
+              <Kod>3039</Kod>
+              <Nazev>Žiletky Mattes 5ks 44 dámské</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+      </Polozky>
+    </DodaciListVydany>
+    <DodaciListVydany ObjectName="DodaciListVydany" ObjectType="Object" ID="efe46e96-18e0-4282-b210-8d3eb291b9c6">
+      <CisloDokladu>DV2100002</CisloDokladu>
+      <Odkaz>tel</Odkaz>
+      <PocetPolozek>1</PocetPolozek>
+      <Adresa>
+        <Firma ObjectName="Firma" ObjectType="Object" ID="5743a12e-87fb-499c-92a8-e7028d94cdb8">
+          <ICO>12058661</ICO>
+        </Firma>
+      </Adresa>
+      <MojeFirma>
+        <IC>46713301</IC>
+      </MojeFirma>
+      <Suma>
+        <Celkem>29.90</Celkem>
+        <Zaklad>24.71</Zaklad>
+      </Suma>
+      <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="List">
+        <DetailniRozpisDPH ObjectName="DetailniRozpisDPH" ObjectType="Object" ID="242aa966-58d7-4836-a301-367f8b3fd727">
+          <SumaCelkem>29.90</SumaCelkem>
+          <SumaDPH>5.19</SumaDPH>
+          <SumaZaklad>24.71</SumaZaklad>
+          <SazbaDPH ObjectName="SazbaDPH" ObjectType="Object" ID="b7d9bd88-bf7e-4c11-be49-2044879c871c">
+            <DruhSazby EnumValueName="Zakladni">1</DruhSazby>
+            <Sazba>21.00</Sazba>
+          </SazbaDPH>
+        </DetailniRozpisDPH>
+      </DetailniRozpisDPH>
+      <Polozky ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="List">
+        <PolozkaDodacihoListuVydaneho ObjectName="PolozkaDodacihoListuVydaneho" ObjectType="Object" ID="b02f8243-7d7d-4810-bfc9-a00e27a91b75">
+          <CelkovaCena>24.71</CelkovaCena>
+          <JednCena>24.7100</JednCena>
+          <Mnozstvi>1.0000</Mnozstvi>
+          <DPH>
+            <Celkem>29.90</Celkem>
+            <Dan>5.19</Dan>
+            <Sazba>21.00</Sazba>
+            <Zaklad>24.71</Zaklad>
+          </DPH>
+          <ObsahPolozky ObjectName="ObsahPolozkySArtiklem" ObjectType="Object" ID="ad3dfa06-7acb-4b66-8e14-9265a0ec28c4">
+            <Artikl ObjectName="Artikl" ObjectType="Object" ID="d200f2fd-f240-4022-b5db-c72d377c59b9">
+              <Kod>3039</Kod>
+              <Nazev>Žiletky Mattes 5ks 44 dámské</Nazev>
+            </Artikl>
+          </ObsahPolozky>
+        </PolozkaDodacihoListuVydaneho>
+      </Polozky>
+    </DodaciListVydany>
+  </DodaciListVydanyList>
+</S5Data>

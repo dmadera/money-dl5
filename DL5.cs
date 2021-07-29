@@ -14,7 +14,7 @@ namespace moneys4_dl5
         public override string ToString() {
             string output = String.Format(new NullFormat(),
                 "{0,-20}{1,-20}{2,-20}{3,12:#}{4,5:#}{5,8:#}{6,10:0.00}{7,10:0.00}{8,10:0.00}{9,10:0.00}{10,10:0.00}{11,10:0.00}{12,-10}",
-                IcDodavatele, OznaceniDl, IcOdberatele, CisloObjednavky, KodovaStranka, PocetPolozek, SoucetBezDph,
+                IcDodavatele, OznaceniDl, IcOdberatele, CisloObjednavky, KodovaStranka, null, SoucetBezDph,
                 SoucetSDph, SoucetBezDphSazba1, SoucetSDphSazba1, SoucetBezDphSazba2, SoucetSDphSazba2, IdSkladu
             ) + Environment.NewLine;
 
@@ -40,7 +40,7 @@ namespace moneys4_dl5
             return String.Format(new NullFormat(),
                 "{0,7}{1,-60}{2,1:#}{3,5:0.00}{4,9:0.00}{5,9:0.00}{6,9:0.00}{7,8:0.00}{8,-20}{9,-10}{10,-20}{11,-20}{12,1:0}{13,9:0.00}{14,-20}",
                 Kod, Nazev, Skupina, Dph, VyrobCena, NakupCenaSDph, ProdejCenaSDph, Mnozstvi, Sarze, Expirace, CarovyKod,
-                KodDodavatele, DruhKodu, NakupniCenaBezDph, Certifikat
+                KodDodavatele, null, NakupniCenaBezDph, Certifikat
             );
         }
     }
