@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace moneys4_dl5
 {
@@ -37,7 +38,7 @@ namespace moneys4_dl5
         public DL5Item() {}
 
         public override string ToString() {
-            return String.Format(new NullFormat(),
+            return String.Format(new NullFormat(), 
                 "{0,7}{1,-60}{2,1:#}{3,5:0.00}{4,9:0.00}{5,9:0.00}{6,9:0.00}{7,8:0.00}{8,-20}{9,-10}{10,-20}{11,-20}{12,1:0}{13,9:0.00}{14,-20}",
                 Kod, Nazev, Skupina, Dph, VyrobCena, NakupCenaSDph, ProdejCenaSDph, Mnozstvi, Sarze, Expirace, CarovyKod,
                 KodDodavatele, null, NakupniCenaBezDph, Certifikat
@@ -46,6 +47,7 @@ namespace moneys4_dl5
     }
 
     public class NullFormat : IFormatProvider, ICustomFormatter {
+        
         public object GetFormat(Type service) {
             if (service == typeof(ICustomFormatter)) return this;
             
@@ -55,8 +57,9 @@ namespace moneys4_dl5
         public string Format(string format, object arg, IFormatProvider provider) {
             if (arg == null) return "";
                 
+            var myProvider = CultureInfo.GetCultureInfo("en-EN");
             IFormattable formattable = arg as IFormattable;
-            if (formattable != null) return formattable.ToString(format, provider);
+            if (formattable != null) return formattable.ToString(format, myProvider);
 
             return arg.ToString();
         }

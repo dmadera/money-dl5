@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
-
+using System.Globalization;
 
 using DLV_DL5;
 
@@ -31,17 +31,18 @@ namespace moneys4_dl5 {
             if(data == null || data.DodaciListVydanyList == null) throw new Exception("Chybný XML soubor.");
 
             int resultI = 0; float resultF = 0;
+            var myProvider = CultureInfo.GetCultureInfo("en-EN");
 
             foreach(S5DataDodaciListVydany dl in data.DodaciListVydanyList) {
                 DL5 dl5 = new DL5() {
                     IcDodavatele = dl.MojeFirma.IC,
                     OznaceniDl = dl.CisloDokladu,
                     IcOdberatele = dl.Adresa.Firma.ICO,
-                    CisloObjednavky = int.TryParse(Regex.Replace(dl.Odkaz, @"[^0-9]+", ""), out resultI) ? resultI : null,
+                    CisloObjednavky = int.TryParse(Regex.Replace(dl.Odkaz, @"[^0-9]+", ""), NumberStyles.Integer, myProvider, out resultI) ? resultI : null,
                     KodovaStranka = 1250,
-                    PocetPolozek = int.TryParse(dl.PocetPolozek, out resultI) ? resultI : null,
-                    SoucetBezDph = float.TryParse(dl.Suma.Zaklad, out resultF) ? resultF : null,
-                    SoucetSDph = float.TryParse(dl.Suma.Celkem, out resultF) ? resultF : null,
+                    PocetPolozek = int.TryParse(dl.PocetPolozek, NumberStyles.Integer, myProvider, out resultI) ? resultI : null,
+                    SoucetBezDph = float.TryParse(dl.Suma.Zaklad, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : null,
+                    SoucetSDph = float.TryParse(dl.Suma.Celkem, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : null,
                     SoucetBezDphSazba1 = null,
                     SoucetSDphSazba1 = null,
                     SoucetBezDphSazba2 = null,
@@ -56,11 +57,11 @@ namespace moneys4_dl5 {
                 foreach(S5DataDodaciListVydanyDetailniRozpisDPHDetailniRozpisDPH rozpisDPH in dl.DetailniRozpisDPH.DetailniRozpisDPH) {
                     druhSazby = (int) rozpisDPH.SazbaDPH.DruhSazby.Value;
                     if(druhSazby == snizena) {
-                        soucetBezDphSazba1 += float.TryParse(rozpisDPH.SumaZaklad, out resultF) ? resultF : 0;
-                        SoucetSDphSazba1 += float.TryParse(rozpisDPH.SumaCelkem, out resultF) ? resultF : 0;
+                        soucetBezDphSazba1 += float.TryParse(rozpisDPH.SumaZaklad, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : 0;
+                        SoucetSDphSazba1 += float.TryParse(rozpisDPH.SumaCelkem, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : 0;
                     } else if(druhSazby == zakladni) {
-                        soucetBezDphSazba2 += float.TryParse(rozpisDPH.SumaZaklad, out resultF) ? resultF : 0;
-                        SoucetSDphSazba2 += float.TryParse(rozpisDPH.SumaCelkem, out resultF) ? resultF : 0;
+                        soucetBezDphSazba2 += float.TryParse(rozpisDPH.SumaZaklad, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : 0;
+                        SoucetSDphSazba2 += float.TryParse(rozpisDPH.SumaCelkem, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : 0;
                     }
                 }
 
@@ -74,17 +75,17 @@ namespace moneys4_dl5 {
                         Kod = null,
                         Nazev = pol.ObsahPolozky.Artikl.Nazev,
                         Skupina = null, 
-                        Dph = float.TryParse(pol.DPH.Sazba, out resultF) ? resultF : null,
+                        Dph = float.TryParse(pol.DPH.Sazba, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : null,
                         VyrobCena = null, 
                         NakupCenaSDph = null, 
                         ProdejCenaSDph = null, 
-                        Mnozstvi = float.TryParse(pol.Mnozstvi, out resultF) ? resultF : null,
+                        Mnozstvi = float.TryParse(pol.Mnozstvi, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : null,
                         Sarze = null, 
                         Expirace = null, 
                         CarovyKod = null, 
                         KodDodavatele = pol.ObsahPolozky.Artikl.Kod,
                         DruhKodu = 0,
-                        NakupniCenaBezDph = float.TryParse(pol.JednCena, out resultF) ? resultF : null,
+                        NakupniCenaBezDph = float.TryParse(pol.JednCena, NumberStyles.AllowDecimalPoint, myProvider, out resultF) ? resultF : null,
                         Certifikat = null
                     };
 
